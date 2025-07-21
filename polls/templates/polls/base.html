@@ -1,0 +1,22 @@
+{% load static %}
+
+
+<html lang="RU">
+  <head>
+    <meta charset="utf-8" />
+    {% block title %}{% endblock title %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="block">
+        <header>
+            <h1>Онлайн голосование</h1>
+            <p class="description">Примите участие в нашем опросе. Ваше мнение важно для нас!</p>
+        </header>
+        {% block content %}{% endblock %}
+
+    </div>  
+  </body>
+</html>

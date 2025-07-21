@@ -1,0 +1,25 @@
+{% extends 'polls/base.html' %}
+
+{% load static %}
+
+{% block title %}<title>Главная</title>{% endblock title %}
+
+{% block content %}
+{% if latest_question_list %}
+            <ul>
+            {% for question in latest_question_list %}
+                <a href="{% url 'polls:detail' question.id %}" class="vote-card">
+                  <div class="vote-card-content">
+                    <h2>{{ question.question_text }}</h2>
+                    <div class="vote-info">
+                      <span class="vote-link">Учавстовать →</span>
+                    </div>
+                  </div>
+
+                 </a>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No polls are available.</p>
+        {% endif %}
+{% endblock content %}
