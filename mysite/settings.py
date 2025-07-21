@@ -25,7 +25,15 @@ SECRET_KEY = 'django-insecure-f=**ep&9yf%mu5kru-u9rmz(veaakgy83c(1cra%9yw6@r=v*z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'plumbussur-voting-d253.twc1.net',
+    'localhost',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://plumbussur-voting-d253.twc1.net",
+    
+]
 
 
 # Application definition
