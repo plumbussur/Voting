@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'plumbussur-voting-d253.twc1.net',
     'localhost',
+    '127.0.0.1',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -114,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru-RU'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
